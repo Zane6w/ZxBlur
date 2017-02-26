@@ -12,7 +12,9 @@
 		D92475391E61D6DE00E0ED31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D92475371E61D6DE00E0ED31 /* Main.storyboard */; };
 		D924753B1E61D6DE00E0ED31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D924753A1E61D6DE00E0ED31 /* Assets.xcassets */; };
 		D924753E1E61D6DE00E0ED31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D924753C1E61D6DE00E0ED31 /* LaunchScreen.storyboard */; };
-		D92475461E61D6F500E0ED31 /* ZxBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92475451E61D6F500E0ED31 /* ZxBlur.swift */; };
+		D92F2B0D1E62A27B00AF925F /* ZxSecure.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F2B0B1E62A27B00AF925F /* ZxSecure.swift */; };
+		D92F2B0E1E62A27B00AF925F /* ZxSecureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F2B0C1E62A27B00AF925F /* ZxSecureView.swift */; };
+		D92F2B121E62A2D700AF925F /* ZxBlur.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92F2B111E62A2D700AF925F /* ZxBlur.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		D92475331E61D6DE00E0ED31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D92475351E61D6DE00E0ED31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D92475381E61D6DE00E0ED31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D924753A1E61D6DE00E0ED31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D924753A1E61D6DE00E0ED31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		D924753D1E61D6DE00E0ED31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D924753F1E61D6DE00E0ED31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D92475451E61D6F500E0ED31 /* ZxBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZxBlur.swift; sourceTree = "<group>"; };
+		D924753F1E61D6DE00E0ED31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../Info.plist; sourceTree = "<group>"; };
+		D92F2B0B1E62A27B00AF925F /* ZxSecure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZxSecure.swift; sourceTree = "<group>"; };
+		D92F2B0C1E62A27B00AF925F /* ZxSecureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZxSecureView.swift; sourceTree = "<group>"; };
+		D92F2B111E62A2D700AF925F /* ZxBlur.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZxBlur.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				D92475331E61D6DE00E0ED31 /* AppDelegate.swift */,
 				D92475351E61D6DE00E0ED31 /* ViewController.swift */,
-				D92475451E61D6F500E0ED31 /* ZxBlur.swift */,
+				D92F2B101E62A2BC00AF925F /* Blur Tool */,
+				D92F2B0A1E62A26200AF925F /* Blur Secure */,
+				D92F2B0F1E62A2A200AF925F /* Support Files */,
+			);
+			path = ZxBlur;
+			sourceTree = "<group>";
+		};
+		D92F2B0A1E62A26200AF925F /* Blur Secure */ = {
+			isa = PBXGroup;
+			children = (
+				D92F2B0B1E62A27B00AF925F /* ZxSecure.swift */,
+				D92F2B0C1E62A27B00AF925F /* ZxSecureView.swift */,
+			);
+			path = "Blur Secure";
+			sourceTree = "<group>";
+		};
+		D92F2B0F1E62A2A200AF925F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
 				D92475371E61D6DE00E0ED31 /* Main.storyboard */,
 				D924753A1E61D6DE00E0ED31 /* Assets.xcassets */,
 				D924753C1E61D6DE00E0ED31 /* LaunchScreen.storyboard */,
 				D924753F1E61D6DE00E0ED31 /* Info.plist */,
 			);
-			path = ZxBlur;
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		D92F2B101E62A2BC00AF925F /* Blur Tool */ = {
+			isa = PBXGroup;
+			children = (
+				D92F2B111E62A2D700AF925F /* ZxBlur.swift */,
+			);
+			path = "Blur Tool";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,8 +172,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D92475361E61D6DE00E0ED31 /* ViewController.swift in Sources */,
+				D92F2B0E1E62A27B00AF925F /* ZxSecureView.swift in Sources */,
+				D92F2B121E62A2D700AF925F /* ZxBlur.swift in Sources */,
 				D92475341E61D6DE00E0ED31 /* AppDelegate.swift in Sources */,
-				D92475461E61D6F500E0ED31 /* ZxBlur.swift in Sources */,
+				D92F2B0D1E62A27B00AF925F /* ZxSecure.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -156,6 +188,7 @@
 				D92475381E61D6DE00E0ED31 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		D924753C1E61D6DE00E0ED31 /* LaunchScreen.storyboard */ = {
@@ -164,6 +197,7 @@
 				D924753D1E61D6DE00E0ED31 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -305,6 +339,7 @@
 				D92475441E61D6DE00E0ED31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
